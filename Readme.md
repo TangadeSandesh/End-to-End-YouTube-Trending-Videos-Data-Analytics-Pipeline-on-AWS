@@ -6,7 +6,11 @@
 This project implements an end-to-end data engineering pipeline to process and analyze trending YouTube video datasets from Kaggle. Leveraging AWS services such as S3, Lambda, Glue, Athena, and QuickSight, the pipeline automates ingestion, transformation, schema management, and visualization of both CSV and JSON data sources across multiple regions.
 
 ## Architecture
+## Architecture
 
+<p align="center">
+  <img src="./architecture_diagram.png" alt="Architecture Diagram" width="700"/>
+</p>
 - **Data Source:** Kaggle YouTube Trending Videos Dataset (CSV \& JSON, region-wise)
 - **Storage:** AWS S3 (Raw and Cleaned Buckets)
 - **Transformation:** AWS Lambda (PySpark for JSON to Parquet), AWS Glue ETL (CSV schema management)
